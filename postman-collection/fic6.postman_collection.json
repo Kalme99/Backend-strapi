@@ -1,0 +1,1521 @@
+{
+	"info": {
+		"_postman_id": "35639ab8-1bb8-4e35-a10c-af70fe51c6bc",
+		"name": "fic6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23778193"
+	},
+	"item": [
+		{
+			"name": "api callback",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"va_numbers\": [\r\n    {\r\n      \"va_number\": \"23601584894\",\r\n      \"bank\": \"bca\"\r\n    }\r\n  ],\r\n  \"transaction_time\": \"2023-07-16 21:27:47\",\r\n  \"transaction_status\": \"settlement\",\r\n  \"transaction_id\": \"72b644cd-a634-4da5-8a7f-24011efbb096\",\r\n  \"status_message\": \"midtrans payment notification\",\r\n  \"status_code\": \"200\",\r\n  \"signature_key\": \"6f6f55a455f5c4c9450105926c753845052fe2c8fba2f8f9f19921b3b8e39eccad76c3be748c60b8844b188bb87aae4bdbe91a267bda1967685ed848f7f9ba0e\",\r\n  \"settlement_time\": \"2023-07-16 21:28:05\",\r\n  \"payment_type\": \"bank_transfer\",\r\n  \"payment_amounts\": [\r\n\r\n  ],\r\n  \"order_id\": \"22\",\r\n  \"merchant_id\": \"G535023601\",\r\n  \"gross_amount\": \"676000.00\",\r\n  \"fraud_status\": \"accept\",\r\n  \"expiry_time\": \"2023-07-17 21:27:42\",\r\n  \"currency\": \"IDR\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/payment-callbacks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"payment-callbacks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200ok",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"va_numbers\": [\r\n    {\r\n      \"va_number\": \"23601584894\",\r\n      \"bank\": \"bca\"\r\n    }\r\n  ],\r\n  \"transaction_time\": \"2023-07-16 21:27:47\",\r\n  \"transaction_status\": \"settlement\",\r\n  \"transaction_id\": \"72b644cd-a634-4da5-8a7f-24011efbb096\",\r\n  \"status_message\": \"midtrans payment notification\",\r\n  \"status_code\": \"200\",\r\n  \"signature_key\": \"6f6f55a455f5c4c9450105926c753845052fe2c8fba2f8f9f19921b3b8e39eccad76c3be748c60b8844b188bb87aae4bdbe91a267bda1967685ed848f7f9ba0e\",\r\n  \"settlement_time\": \"2023-07-16 21:28:05\",\r\n  \"payment_type\": \"bank_transfer\",\r\n  \"payment_amounts\": [\r\n\r\n  ],\r\n  \"order_id\": \"22\",\r\n  \"merchant_id\": \"G535023601\",\r\n  \"gross_amount\": \"676000.00\",\r\n  \"fraud_status\": \"accept\",\r\n  \"expiry_time\": \"2023-07-17 21:27:42\",\r\n  \"currency\": \"IDR\"\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/payment-callbacks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"payment-callbacks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "connect-src 'self' https:;img-src 'self' data: blob: https://market-assets.strapi.io;media-src 'self' data: blob:;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Strapi <strapi.io>"
+						},
+						{
+							"key": "Content-Length",
+							"value": "367"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 16 Jul 2023 15:48:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 22,\n        \"item\": [\n            {\n                \"id\": 7,\n                \"qty\": 1,\n                \"Price\": 600000,\n                \"ProductName\": \"Sepatu naiki\"\n            }\n        ],\n        \"totalPrice\": 676000,\n        \"deliveryAddress\": \"Jalan Gajahmada no 134,kelurahan itu,sulawesi Tengah\",\n        \"courierName\": \"JNE\",\n        \"shippingCost\": 76000,\n        \"createdAt\": \"2023-07-16T14:27:25.342Z\",\n        \"updatedAt\": \"2023-07-16T15:48:17.617Z\",\n        \"publishedAt\": \"2023-07-16T14:27:25.340Z\",\n        \"statusOrder\": \"purchased\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "api register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ikal\",\r\n    \"password\": \"Kalme321!\",\r\n    \"email\": \"mohammadhaikhalmaudary@gmail.com\",\r\n    \"username\": \"Ikal\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/auth/local/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"auth",
+						"local",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 ok",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ikal\",\r\n    \"password\": \"Kalme321!\",\r\n    \"email\": \"mohammadhaikhalmaudary@gmail.com\",\r\n    \"username\": \"Ikal\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/auth/local/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"auth",
+								"local",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "connect-src 'self' https:;img-src 'self' data: blob: https://market-assets.strapi.io;media-src 'self' data: blob:;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "10"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "9"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1689337645"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Strapi <strapi.io>"
+						},
+						{
+							"key": "Content-Length",
+							"value": "354"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 Jul 2023 12:26:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jwt\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg5MzM3NTg0LCJleHAiOjE2OTE5Mjk1ODR9.zwfZql6DckPfPpUgXAQvAXs1-wRLz4ZJfMYsdNu04wE\",\n    \"user\": {\n        \"id\": 1,\n        \"username\": \"Ikal\",\n        \"email\": \"mohammadhaikhalmaudary@gmail.com\",\n        \"provider\": \"local\",\n        \"confirmed\": true,\n        \"blocked\": false,\n        \"createdAt\": \"2023-07-14T12:26:24.260Z\",\n        \"updatedAt\": \"2023-07-14T12:26:24.260Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "api  login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identifier\": \"mohammadhaikhalmaudary@gmail.com\",\r\n    \"password\": \"Kalme321!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/auth/local",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"auth",
+						"local"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 ok",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identifier\": \"mohammadhaikhalmaudary@gmail.com\",\r\n    \"password\": \"Kalme321!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/auth/local",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"auth",
+								"local"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "connect-src 'self' https:;img-src 'self' data: blob: https://market-assets.strapi.io;media-src 'self' data: blob:;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "10"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "9"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1689337960"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Strapi <strapi.io>"
+						},
+						{
+							"key": "Content-Length",
+							"value": "354"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 Jul 2023 12:31:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jwt\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg5MzM3ODk5LCJleHAiOjE2OTE5Mjk4OTl9.7PhgA10Y6yxonzbnt-0CFow0sogbe-OuPg6MF5mFii4\",\n    \"user\": {\n        \"id\": 1,\n        \"username\": \"Ikal\",\n        \"email\": \"mohammadhaikhalmaudary@gmail.com\",\n        \"provider\": \"local\",\n        \"confirmed\": true,\n        \"blocked\": false,\n        \"createdAt\": \"2023-07-14T12:26:24.260Z\",\n        \"updatedAt\": \"2023-07-14T12:26:24.260Z\"\n    }\n}"
+				},
+				{
+					"name": "400 error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identifier\": \"mohammadhaikhalmaudary@gmail.comerror\",\r\n    \"password\": \"Kalme321!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/auth/local",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"auth",
+								"local"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "connect-src 'self' https:;img-src 'self' data: blob: https://market-assets.strapi.io;media-src 'self' data: blob:;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "10"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "9"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1689338089"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "117"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 Jul 2023 12:33:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": null,\n    \"error\": {\n        \"status\": 400,\n        \"name\": \"ValidationError\",\n        \"message\": \"Invalid identifier or password\",\n        \"details\": {}\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "api get all product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 ok",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "connect-src 'self' https:;img-src 'self' data: blob: https://market-assets.strapi.io;media-src 'self' data: blob:;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Strapi <strapi.io>"
+						},
+						{
+							"key": "Content-Length",
+							"value": "369"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 Jul 2023 12:48:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"attributes\": {\n                \"name\": \"Sepatu Adicuy\",\n                \"Deskripsi\": \"Sepatu orang bumi\",\n                \"quantity\": 1000,\n                \"Price\": 600000,\n                \"inStock\": true,\n                \"image\": \"sepatu.jpg\",\n                \"distributor\": \"PT.kfc\",\n                \"createdAt\": \"2023-07-14T12:47:46.081Z\",\n                \"updatedAt\": \"2023-07-14T12:47:57.028Z\",\n                \"publishedAt\": \"2023-07-14T12:47:57.024Z\"\n            }\n        }\n    ],\n    \"meta\": {\n        \"pagination\": {\n            \"page\": 1,\n            \"pageSize\": 25,\n            \"pageCount\": 1,\n            \"total\": 1\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "api get product by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/api/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 ok",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/products/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"products",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "connect-src 'self' https:;img-src 'self' data: blob: https://market-assets.strapi.io;media-src 'self' data: blob:;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Strapi <strapi.io>"
+						},
+						{
+							"key": "Content-Length",
+							"value": "306"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 Jul 2023 12:49:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"attributes\": {\n            \"name\": \"Sepatu Adicuy\",\n            \"Deskripsi\": \"Sepatu orang bumi\",\n            \"quantity\": 1000,\n            \"Price\": 600000,\n            \"inStock\": true,\n            \"image\": \"sepatu.jpg\",\n            \"distributor\": \"PT.kfc\",\n            \"createdAt\": \"2023-07-14T12:47:46.081Z\",\n            \"updatedAt\": \"2023-07-14T12:47:57.028Z\",\n            \"publishedAt\": \"2023-07-14T12:47:57.024Z\"\n        }\n    },\n    \"meta\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "api create product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg5MzM5NTgyLCJleHAiOjE2OTE5MzE1ODJ9.RZnX5W1LjVE5dlVOa8sgAfO21w0bi0YTB7oXhL-tSgI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \r\n            \"name\": \"Sepatu naiki\",\r\n            \"Deskripsi\": \"Sepatu makhluk Bumi\",\r\n            \"quantity\": 100,\r\n            \"Price\": 600000,\r\n            \"inStock\": true,\r\n            \"image\": \"sepatu0.jpg\",\r\n            \"distributor\": \"PT.Antam\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 ok",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg5MzM5NTgyLCJleHAiOjE2OTE5MzE1ODJ9.RZnX5W1LjVE5dlVOa8sgAfO21w0bi0YTB7oXhL-tSgI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": {\r\n        \r\n            \"name\": \"Sepatu Naikicuy\",\r\n            \"Deskripsi\": \"Sepatu makhluk pluto\",\r\n            \"quantity\": 9000,\r\n            \"Price\": 790000,\r\n            \"inStock\": true,\r\n            \"image\": \"sepatu2.jpg\",\r\n            \"distributor\": \"PT.pertamini\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "connect-src 'self' https:;img-src 'self' data: blob: https://market-assets.strapi.io;media-src 'self' data: blob:;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Strapi <strapi.io>"
+						},
+						{
+							"key": "Content-Length",
+							"value": "318"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 Jul 2023 13:01:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 2,\n        \"attributes\": {\n            \"name\": \"Sepatu Naikicuy\",\n            \"Deskripsi\": \"Sepatu makhluk pluto\",\n            \"quantity\": 9000,\n            \"Price\": 790000,\n            \"inStock\": true,\n            \"image\": \"sepatu2.jpg\",\n            \"distributor\": \"PT.pertamini\",\n            \"createdAt\": \"2023-07-14T13:01:02.366Z\",\n            \"updatedAt\": \"2023-07-14T13:01:02.366Z\",\n            \"publishedAt\": \"2023-07-14T13:01:02.363Z\"\n        }\n    },\n    \"meta\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "api update product",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg5MzM5NTgyLCJleHAiOjE2OTE5MzE1ODJ9.RZnX5W1LjVE5dlVOa8sgAfO21w0bi0YTB7oXhL-tSgI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n            \"name\": \"Sepatu Naikicuy 2\",\r\n            \"Deskripsi\": \"Sepatu makhluk pluto tahun 2018\",\r\n            \"quantity\": 700,\r\n            \"Price\": 890000,\r\n            \"inStock\": true,\r\n            \"image\": \"sepatu-revisi.jpg\",\r\n            \"distributor\": \"PT.pertamini\"\r\n         }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/products/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 ok",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg5MzM5NTgyLCJleHAiOjE2OTE5MzE1ODJ9.RZnX5W1LjVE5dlVOa8sgAfO21w0bi0YTB7oXhL-tSgI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": {\r\n            \"name\": \"Sepatu Naikicuy 2\",\r\n            \"Deskripsi\": \"Sepatu makhluk pluto tahun 2018\",\r\n            \"quantity\": 700,\r\n            \"Price\": 890000,\r\n            \"inStock\": true,\r\n            \"image\": \"sepatu-revisi.jpg\",\r\n            \"distributor\": \"PT.pertamini\"\r\n         }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/products/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"products",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "connect-src 'self' https:;img-src 'self' data: blob: https://market-assets.strapi.io;media-src 'self' data: blob:;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Strapi <strapi.io>"
+						},
+						{
+							"key": "Content-Length",
+							"value": "336"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 Jul 2023 13:08:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 2,\n        \"attributes\": {\n            \"name\": \"Sepatu Naikicuy 2\",\n            \"Deskripsi\": \"Sepatu makhluk pluto tahun 2018\",\n            \"quantity\": 700,\n            \"Price\": 890000,\n            \"inStock\": true,\n            \"image\": \"sepatu-revisi.jpg\",\n            \"distributor\": \"PT.pertamini\",\n            \"createdAt\": \"2023-07-14T13:01:02.366Z\",\n            \"updatedAt\": \"2023-07-14T13:08:42.239Z\",\n            \"publishedAt\": \"2023-07-14T13:01:02.363Z\"\n        }\n    },\n    \"meta\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "api delete product",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwtToken}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:1337/api/products/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"products",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 ok",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwtToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:1337/api/products/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"products",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "connect-src 'self' https:;img-src 'self' data: blob: https://market-assets.strapi.io;media-src 'self' data: blob:;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Strapi <strapi.io>"
+						},
+						{
+							"key": "Content-Length",
+							"value": "306"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 Jul 2023 13:19:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"attributes\": {\n            \"name\": \"Sepatu Adicuy\",\n            \"Deskripsi\": \"Sepatu orang bumi\",\n            \"quantity\": 1000,\n            \"Price\": 600000,\n            \"inStock\": true,\n            \"image\": \"sepatu.jpg\",\n            \"distributor\": \"PT.kfc\",\n            \"createdAt\": \"2023-07-14T12:47:46.081Z\",\n            \"updatedAt\": \"2023-07-14T12:47:57.028Z\",\n            \"publishedAt\": \"2023-07-14T12:47:57.024Z\"\n        }\n    },\n    \"meta\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "api upload images",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwtToken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/E:/Tugas/Persediaan (Inventory).jpg"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"upload"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 ok",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwtToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files",
+									"type": "file",
+									"src": "/E:/Tugas/Persediaan (Inventory).jpg"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/upload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"upload"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "connect-src 'self' https:;img-src 'self' data: blob: https://market-assets.strapi.io;media-src 'self' data: blob:;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Strapi <strapi.io>"
+						},
+						{
+							"key": "Content-Length",
+							"value": "403"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 Jul 2023 13:30:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Persediaan (Inventory).jpg\",\n        \"alternativeText\": null,\n        \"caption\": null,\n        \"width\": 200,\n        \"height\": 149,\n        \"formats\": null,\n        \"hash\": \"Persediaan_Inventory_468b3da758\",\n        \"ext\": \".jpg\",\n        \"mime\": \"image/jpeg\",\n        \"size\": 9.58,\n        \"url\": \"/uploads/Persediaan_Inventory_468b3da758.jpg\",\n        \"previewUrl\": null,\n        \"provider\": \"local\",\n        \"provider_metadata\": null,\n        \"createdAt\": \"2023-07-14T13:30:58.464Z\",\n        \"updatedAt\": \"2023-07-14T13:30:58.464Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "api order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwtToken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":{\r\n    \"item\":[\r\n        {\r\n        \"id\": 7,\r\n        \"ProductName\": \"Sepatu naiki\",\r\n        \"Price\": 600000,\r\n        \"qty\": 1\r\n        }\r\n    ],\r\n    \"totalPrice\": 676000,\r\n    \"deliveryAddress\": \"Jalan Gajahmada no 134,kelurahan itu,sulawesi Tengah\",\r\n    \"courierName\": \"JNE\",\r\n    \"shippingCost\": 76000,\r\n    \"statusOrder\": \"waitingPayment\"\r\n    } \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 ok",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwtToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"data\" : {\r\n\r\n        \"item\": [\r\n            {\"id\": 1,\r\n            \"ProductName\": \"Sepatu Adicuy\",\r\n            \"Price\": 800000,\r\n            \"qty\": 1\r\n\r\n            },\r\n            {\"id\": 2,\r\n            \"ProductName\": \"Celana Dalam Kim Jong Unch\",\r\n            \"Price\": 230000,\r\n            \"qty\": 5\r\n\r\n            },\r\n            {}\r\n        ],\r\n        \"totalPrice\": 2026000,\r\n        \"deliveryAddress\": \"Jalan Gajahmada no 134,kelurahan itu,sulawesi Tengah\",\r\n        \"courierName\": \"JNE\",\r\n        \"shippingCost\": 76000,\r\n        \"orderStatus\": \"Waiting_payment\"\r\n\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "connect-src 'self' https:;img-src 'self' data: blob: https://market-assets.strapi.io;media-src 'self' data: blob:;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Strapi <strapi.io>"
+						},
+						{
+							"key": "Content-Length",
+							"value": "445"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 16 Jul 2023 00:19:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 3,\n        \"attributes\": {\n            \"item\": [\n                {\n                    \"id\": 1,\n                    \"qty\": 1,\n                    \"Price\": 800000,\n                    \"ProductName\": \"Sepatu Adicuy\"\n                },\n                {\n                    \"id\": 2,\n                    \"qty\": 5,\n                    \"Price\": 230000,\n                    \"ProductName\": \"Celana Dalam Kim Jong Unch\"\n                },\n                {}\n            ],\n            \"totalPrice\": 2026000,\n            \"deliveryAddress\": \"Jalan Gajahmada no 134,kelurahan itu,sulawesi Tengah\",\n            \"courierName\": \"JNE\",\n            \"shippingCost\": 76000,\n            \"createdAt\": \"2023-07-16T00:19:16.492Z\",\n            \"updatedAt\": \"2023-07-16T00:19:16.492Z\",\n            \"publishedAt\": \"2023-07-16T00:19:16.490Z\"\n        }\n    },\n    \"meta\": {}\n}"
+				},
+				{
+					"name": "core api 200 ok",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwtToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"data\" : {\r\n\r\n        \"item\": [\r\n            {\"id\": 1,\r\n            \"ProductName\": \"Sepatu Adicuy\",\r\n            \"Price\": 800000,\r\n            \"qty\": 1\r\n\r\n            },\r\n            {\"id\": 2,\r\n            \"ProductName\": \"Celana Dalam Kim Jong Unch\",\r\n            \"Price\": 230000,\r\n            \"qty\": 5\r\n\r\n            },\r\n            {}\r\n        ],\r\n        \"totalPrice\": 2026000,\r\n        \"deliveryAddress\": \"Jalan Gajahmada no 134,kelurahan itu,sulawesi Tengah\",\r\n        \"courierName\": \"JNE\",\r\n        \"shippingCost\": 76000,\r\n        \"statusOrder\": \"waitingPayment,\"\r\n\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "connect-src 'self' https:;img-src 'self' data: blob: https://market-assets.strapi.io;media-src 'self' data: blob:;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Strapi <strapi.io>"
+						},
+						{
+							"key": "Content-Length",
+							"value": "925"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 16 Jul 2023 02:39:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": \"201\",\n    \"status_message\": \"GoPay transaction is created\",\n    \"transaction_id\": \"b96ba664-4eac-46a1-a372-96747e8c6ecd\",\n    \"order_id\": \"7\",\n    \"merchant_id\": \"G535023601\",\n    \"gross_amount\": \"2026000.00\",\n    \"currency\": \"IDR\",\n    \"payment_type\": \"gopay\",\n    \"transaction_time\": \"2023-07-16 10:40:58\",\n    \"transaction_status\": \"pending\",\n    \"fraud_status\": \"accept\",\n    \"actions\": [\n        {\n            \"name\": \"generate-qr-code\",\n            \"method\": \"GET\",\n            \"url\": \"https://api.sandbox.midtrans.com/v2/gopay/b96ba664-4eac-46a1-a372-96747e8c6ecd/qr-code\"\n        },\n        {\n            \"name\": \"deeplink-redirect\",\n            \"method\": \"GET\",\n            \"url\": \"https://simulator.sandbox.midtrans.com/gopay/partner/app/payment-pin?id=dd1c9f5d-bf2a-485d-b293-fad4ecaf980f\"\n        },\n        {\n            \"name\": \"get-status\",\n            \"method\": \"GET\",\n            \"url\": \"https://api.sandbox.midtrans.com/v2/b96ba664-4eac-46a1-a372-96747e8c6ecd/status\"\n        },\n        {\n            \"name\": \"cancel\",\n            \"method\": \"POST\",\n            \"url\": \"https://api.sandbox.midtrans.com/v2/b96ba664-4eac-46a1-a372-96747e8c6ecd/cancel\"\n        }\n    ],\n    \"expiry_time\": \"2023-07-16 10:55:58\"\n}"
+				}
+			]
+		}
+	]
+}
